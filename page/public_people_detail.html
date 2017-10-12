@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>从业人员-行业场所管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv=Cache-Control content=no-cache />
+	<link rel="stylesheet" href="/libs/css/common.css">
+	<link rel="stylesheet" href="/publicorder_wap/libs/css/common.css">
+</head>
+<body>
+
+	<div id="header" class="com-bg">
+		<div class="left-button white-color">
+			<a href="public_people.html">
+				<img src="/publicorder_wap/libs/img/icon-left.png" alt="" style="width: 77%; margin: 9px 10px;">
+			</a>
+		</div>
+		<div class="title white-color fs-big">从业人员</div>
+		<div class="right-button white-color" id="deletePeople">删除</div>
+	</div>
+	<div class="main public-details">
+		<div class="list white-bg gray-border" id="list">
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">姓名</div>
+				<div class="value com-color" id="name"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">身份证号</div>
+				<div class="value com-color" id="idCard"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">出生日期</div>
+				<div class="value com-color" id="birth"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">职务</div>
+				<div class="value com-color" id="position"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">性别</div>
+				<div class="value com-color" id="gender"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">文化程度</div>
+				<div class="value com-color" id="education"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">民族</div>
+				<div class="value com-color" id="nation"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">婚姻状态</div>
+				<div class="value com-color" id="marriage"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">户口类别</div>
+				<div class="value com-color" id="account"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">血型</div>
+				<div class="value com-color" id="bloodtype"></div>
+			</div>
+			<div class="item gray-border cl" style="border:none">
+				<div class="key gray-color text-line-set">联系电话</div>
+				<div class="value com-color" id="phone1"></div>
+			</div>
+			<div class="item cl">
+				<div class="value com-color" id="phone2"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">QQ号</div>
+				<div class="value com-color" id="qq"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">微信号</div>
+				<div class="value com-color" id="wechat"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">固定电话</div>
+				<div class="value com-color" id="telephone"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">身高</div>
+				<div class="value com-color" id="height"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">现住址</div>
+				<div class="value com-color" id="address"></div>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">身份证正面照片</div>
+				<img id="picture" style="width: 100%;"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var isChecked = true;
+</script>
+<script src="/libs/js/jquery.min.js"></script>
+<script src="/libs/js/common.js"></script>
+<script src="/publicorder_wap/libs/js/permissions.js"></script>
+<script src="/publicorder_wap/libs/js/public_people_detail.js"></script>
+</html>

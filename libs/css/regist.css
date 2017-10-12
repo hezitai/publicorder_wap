@@ -1,0 +1,80 @@
+.list { border-width: 1px 0 0 0; border-style: solid; margin: -1px 0 0 0;}
+.list .item .key { float: left; line-height: 40px; margin-left: 10px;width: 110px;}
+.list .item .key.span { padding-left: 20px; }
+.list .item .value { line-height: 40px;  line-height: 40px; border-radius: 5px; float: none; height: 30px;}
+.list .item .item { border-width: 1px 0 0 0; border-style: solid; }
+.list .item .icon {float: left; height: 30px; width: 30px; left: 0px; background: #aaa;position: static;background: url(../img/select.jpg) no-repeat;background-size: 100%;}
+.list .item .icon img { width: 100%; display: block; }
+.list .item.text { padding: 10px; line-height: 25px; color: #666; margin-bottom: 5px; }
+.list .item.text p { margin: 5px 0; text-indent: 2em; font-size: 14px; }
+.list .item.text h4 { margin-bottom: 5px; } 
+.list .item .down { background: url(/wap/Images/icon-right.png); background-size: 100% 100%; float: right;}
+.list .item ul li span{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;display: inline-block;width: 90%;font-size: 15px;vertical-align: middle;}
+.list .item ul li{border-bottom: 1px solid #ddd;padding: 10px 0;}
+.list .item ul li img{width: 10%;vertical-align: middle;}
+.list .item ul .contant{padding-bottom: 5px;border-bottom: 1px solid #ddd;display: none;}
+
+.list input { background: #fff; text-indent:5px;}
+.list input.value { width: 200px; height: 30px; margin: 6px 10px; border: 1px solid #ccc; line-height: 25px; vertical-align: middle; border-radius: 5px;}
+.list input[type=radio] { -webkit-appearance: checkbox; }
+.list .radio.value { text-align: center; }
+
+.list .text-line-set { width: 310px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+.list select {float: right; border: 1px solid #ccc; width: 150px; height: 30px; line-height: 25px; text-align: center; background: #fff;margin: 0 -1px;}
+.list span.unit { float: right; display: inline-block;line-height: 27px;padding: 6px 0; width: 60px; text-align: left;margin: 0 0 0 10px;}
+.list input.value.unit { width: 130px; }
+.floorPlans { margin-bottom: 10px; }
+
+
+#step5 {height: 680px;background: white;}
+#step5 .list{padding: 135px 0;}
+#step5 .list img{margin-left: 10%;margin-right: 5%;}
+#step5 .list .item{margin-top: 30px; display: inline-block; float: right; margin-right: 15%;}
+#step5 .list .item span{display: inline-block; text-align: center; font-size: 20px;}
+#step5 .list .item .key{font-size: 16px;text-align: left;line-height: 25px;width: auto;}
+#step5 .list .item1{position: relative;bottom: 115px;}
+#step5 .list #userNamePut,#step5 .list #PassWordPut{font-size: 16px;color: #666;line-height: normal;vertical-align: middle;}
+#step5 .list .userName{zoom: 1;}
+#step5 .list .userName:after{display: block;clear: both;content: "";} 
+
+
+#judeAddress { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; display: none; }
+#judeAddress .bg { background: rgb(0,0,0); filter:alpha(opacity=40); opacity: 0.4; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;}
+#judeAddress .judeAddress-main { width: 300px; height: 250px; background: #fff; border: 1px solid #ccc; top: 50%; left: 50%; position: absolute; margin: -126px 0 0 -151px; }
+#judeAddress .judeAddress-title { -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; height: 40px; border-bottom: 1px solid #ccc; line-height: 40px; font-size: 16px; padding: 0 10px; }
+#judeAddress .judeAddress-title-text { font-size: 16px; color: #333; float: left; }
+#judeAddress .judeAddress-title-close { text-align: center;font-size: 16px; line-height: 40px; width: 40px; height: 40px; float: right; color: #666; margin: 0 -10px 0 0; cursor: pointer; }
+#judeAddress .judeAddress-body { padding: 10px; height: 189px; }
+#judeAddress .judeAddress-body .textarea { color: #666; padding: 10px; font-size: 16px; height: 115px; border: 1px solid #ccc; display: block; width: 258px; margin: 0px; line-height: 24px; margin: 0 0 10px 0;}
+
+
+#slider {width: 90%;height: 40px;position: relative;background-color: #dae2d0;overflow: hidden;text-align: center;user-select: none;-moz-user-select: none;-webkit-user-select: none;}
+#slider_bg {position: absolute;left: 0;top: 0;height: 100%;background-color: #7AC23C;z-index: 1;}
+#label { width: 46px;position: absolute;left: 0;top: 0;height: 38px;line-height: 38px;border: 1px solid #cccccc;background: #fff;z-index: 3;cursor: move;color: #ff9e77;font-size: 16px;font-weight: 900;}
+#labelTip { position: absolute;left: 0;width: 100%;height: 100%;font-size: 13px;font-family: 'Microsoft Yahei', serif;color: #787878;line-height: 38px;text-align: center;z-index: 2;}
+
+.main h3{margin: 0;background: white; color: #2069d2; font-size: 17px; font-weight: 100; width: 100%; text-align: left; padding: 15px 0; text-indent: 1em;margin-bottom: 6px;border-bottom: 1px solid #ddd;}
+
+.leftBox { height: 375px; width: 40%; float: left; }
+.leftBox img { margin: 75px auto 75px auto; display: block; }
+
+.rightBox { height: 170px; width: 50%; float: left; margin: 0 0 0 3%; padding: 75px 0; }
+
+
+
+.confirmPopup { width: 94% !important;left: 0 !important;margin-left: 3% !important; }
+
+
+.mapBg { background:rgba(0,0,0,0.4); position: fixed; top: 0px; left: 0px; z-index: 9999; width: 100%; height: 100%; }
+.amap {position: absolute; top: 60px; left: 0px; z-index: 9999; width: 100%; height: 100%; }
+
+/*#addPublicAddress select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }*/
+#addPolice select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+#addBusinesskind select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+
+.initHeader { height: 60px; background: #2269d5; position: absolute; top:  0px; left: 0px; width: 100%; text-align: center; color: #fff; font-size: 18px;line-height: 60px;  }
+
+
+
+
+

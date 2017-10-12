@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义单号</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv=Cache-Control content=no-cache /> 
+	<meta http-equiv=Cache-Control content=no-cache /> 
+	<link rel="stylesheet" href="/libs/css/common.css">
+	<link rel="stylesheet" href="/publicorder_wap/libs/css/common.css">
+</head>
+<body>
+	<div id="header" class="com-bg">
+		<div class="left-button white-color">
+			<a href="realname.html">
+				<img src="/publicorder_wap/libs/img/icon-left.png" alt="" style="width: 77%; margin: 9px 10px;">
+			</a>
+		</div>
+		<div class="title white-color fs-big">添加</div>
+		<div class="right-button white-color">
+			<a id="add">
+				提交
+			</a>
+		</div>
+	</div>
+	<div class="main logistics" id="pageItems">
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">人员姓名 :</div>
+				<input class="value com-color" id="fromName"/>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">身份证号 :</div>
+				<input class="value com-color" id="fromId"/>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">联系电话 :</div>
+				<input class="value com-color" id="fromPhone"/>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">维修时间 :</div>
+				<input class="value com-color" id="dateShow"/>
+				<input type="date" onchange="realNameAddWaste.getDate('#dateShow','#date')" id="date">
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">物品名称 :</div>
+				<input class="value com-color" id="name"/>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">品牌 :</div>
+				<input class="value com-color" id="brand"/>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<div class="item gray-border cl">
+				<div class="key gray-color">物品描述 :</div>
+				<textarea class="com-color" cols="30" rows="5" id="describe"></textarea>
+			</div>
+		</div>
+
+		<div class="list white-bg gray-border">
+			<form id="IdCardA" action="/uploadFiles.ashx?Action=formUpload" method="post" enctype="multipart/form-data" style="display: none;" >
+				<input type="file" name="document" id="fileUpDataElement" onchange="realNameAddWaste.getImage()"/>
+				<input type="submit" id="Submit" value="提交表单" />
+				<input type="hidden" name="fileName" class="fileName"/>
+			</form>
+			<div class="item gray-border cl">
+				<div class="key gray-color">物品照片 :</div>
+				<div class="fileBtn">点击上传</div>
+				<div style="clear:both;height: 1px;"></div>
+				<img src="#" id="GetImage" alt="" style="max-width: 100%; display: none; background: #fff; margin: 0 auto;">
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	var isChecked = true;
+</script>
+<script src="/libs/js/jquery.min.js"></script>
+<script src="/libs/js/jquery.form.js"></script>
+<script src="/libs/js/common.js"></script>
+<script src="/publicorder_wap/libs/js/permissions.js"></script>
+<script src="/publicorder_wap/libs/js/realname_waste_add.js"></script>
+</html>

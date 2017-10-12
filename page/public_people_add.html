@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>从业人员-行业场所管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv=Cache-Control content=no-cache />
+	<link rel="stylesheet" href="/libs/css/common.css">
+	<link rel="stylesheet" href="/publicorder_wap/libs/css/common.css">
+</head>
+<body>
+
+	<div id="header" class="com-bg">
+		<div class="left-button white-color">
+			<a href="public_people.html">
+				<img src="/publicorder_wap/libs/img/icon-left.png" alt="" style="width: 77%; margin: 9px 10px;">
+			</a>
+		</div>
+		<div class="title white-color fs-big">从业人员</div>
+		<div class="right-button white-color" id="addPeople">录入</div>
+	</div>
+	<div class="main logistics">
+		<div class="list white-bg gray-border" id="list">
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">姓名</div>
+				<input type="text" class="value com-color" id="name">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">身份证号</div>
+				<input type="text" class="value com-color" id="idCard">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">出生日期</div>
+				<input type="text" class="value com-color" readonly="readonly" id="birth">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">性别</div>
+				<input type="text" class="value com-color" readonly="readonly" id="gender">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">职务</div>
+				<input type="text" class="value com-color" id="position">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">文化程度</div>
+				<select class="value com-color" style="height: 25px;" id="education"></select>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">民族</div>
+				<select class="value com-color" style="height: 25px;" id="nation"></select>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">婚姻状态</div>
+				<select class="value com-color" style="height: 25px;" id="marriage"></select>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">户口类别</div>
+				<select class="value com-color" style="height: 25px;" id="account"></select>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">血型</div>
+				<select class="value com-color" style="height: 25px;" id="bloodtype"></select>
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">联系电话1</div>
+				<input type="text" class="value com-color" id="phone1">
+			</div>
+			<div class="item gray-border  cl">
+				<div class="key gray-color text-line-set">联系电话2</div>
+				<input type="text" class="value com-color" id="phone2">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">QQ号</div>
+				<input type="text" class="value com-color" id="qq">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">微信号</div>
+				<input type="text" class="value com-color" id="wechat">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">固定电话</div>
+				<input type="text" class="value com-color" id="telephone">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">身高</div>
+				<input type="text" class="value com-color" id="height">
+			</div>
+			<div class="item gray-border cl">
+				<div class="key gray-color text-line-set">现住址</div>
+				<input type="text" class="value com-color" id="address">
+			</div>
+			<div class="list white-bg gray-border">
+				<form id="IdCardA" action="/uploadFiles.ashx?Action=formUpload" method="post" enctype="multipart/form-data" style="display: none;" >
+					<input type="file" name="document" id="fileUpDataElement" onchange="publicPeopleAdd.getImage()"/>
+					<input type="submit" id="Submit" value="提交表单" />
+					<input type="hidden" name="fileName" class="fileName"/>
+				</form>
+				<div class="item gray-border cl">
+					<div class="key gray-color">上传照片 :</div>
+					<div class="fileBtn">点击上传</div>
+					<div style="clear:both;height: 1px;"></div>
+					<img src="#" id="GetImage" alt="" style="max-width: 100%; display: none; background: #fff; margin: 0 auto;">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var isChecked = true;
+</script>
+<script src="/libs/js/jquery.min.js"></script>
+<script src="/libs/js/jquery.form.js"></script>
+<script src="/libs/js/common.js"></script>
+<script src="/publicorder_wap/libs/js/permissions.js"></script>
+<script src="/publicorder_wap/libs/js/public_people_add.js"></script>
+</html>

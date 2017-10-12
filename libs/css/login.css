@@ -1,0 +1,28 @@
+html {height: 100%;background: url(../img/login-bg.jpg); background-size: 100% 100%; background-position: center center; background-attachment:fixed }
+body {height: 100%; }
+
+
+.logo { text-align: center; padding-top: 30px; position: relative; z-index: 5; }
+.input-box,.button-box { width: 300px; margin: 0 auto; padding-top: 20px; position: relative; z-index: 5;  }
+.input-form { height: 60px; width: 300px; position: relative; padding-top: 20px;}
+.icon { width: 30px;height: 30px; position: absolute; top: 50px; left: 0px;}
+.icon.user { background: url(../img/icon-1.png); background-size: 100% 100%; }
+.icon.pass-word { background: url(../img/icon-2.png); background-size: 100% 100%; }
+
+.public_item { border-bottom: 1px solid #ccc; padding-bottom: 10px; padding-top :10px; height: 40px; }
+.icon.public { background: url(../img/icon-3.png); background-size: 100% 100%; top: 15px; }
+.public_item .value { display: block; float: left; position: absolute; left: 40px; right: 0px; top: 15px; line-height: 30px; height: 30px; color: #666;} 
+
+.input-form input { font-size: 18px; margin: 0px; padding: 0px; border-width: 0 0 1px 0; border-style: solid; width: 250px; position: absolute; line-height: 40px; top: 40px; left: 50px;}
+.button-full { line-height: 45px; text-align: center; border-style: solid; border-width: 1px; border-radius: 30px; font-size: 18px; margin-top: 20px;  }
+.button-box a { float: right; line-height: 50px; font-size: 14px;width: 100%; display: block; }
+
+
+.confirmPopup { width: 94% !important;left: 0 !important;margin-left: 3% !important; }
+
+
+.mapBg { background:rgba(0,0,0,0.4); position: fixed; top: 0px; left: 0px; z-index: 9999; width: 100%; height: 100%; }
+.amap {position: absolute; top: 60px; left: 0px; z-index: 9999; width: 100%; height: 100%; }
+
+#addPublicAddress select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+.initHeader { height: 60px; background: #2269d5; position: absolute; top:  0px; left: 0px; width: 100%; text-align: center; color: #fff; font-size: 18px;line-height: 60px;  }

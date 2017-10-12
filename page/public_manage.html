@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>首页-行业场所管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv=Cache-Control content=no-cache />
+	<link rel="stylesheet" href="/libs/css/common.css">
+	<link rel="stylesheet" href="/publicorder_wap/libs/css/common.css">
+	<style>
+		.confirmPopup { width: 94% !important;left: 0 !important;margin-left: 3% !important; }
+		.mapBg { background:#fff; position: fixed; top: 0px; left: 0px; z-index: 9999; width: 100%; height: 100%; }
+		.amap {position: absolute; top: 60px; left: 0px; z-index: 9999; width: 100%; height: 100%; top: 160px; }
+		#addPublicAddress select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+		#addPolice select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+		#addBusinesskind select { width: 90%; height: 45px; line-height: 45px; text-align: center; font-size: 16px; margin:0 5%; }
+		.initHeader { height: 60px; background: #2269d5; position: absolute; top:  0px; left: 0px; width: 100%; text-align: center; color: #fff; font-size: 18px;line-height: 60px;  }
+		.chooseAddressResults { position: relative; z-index: 10001; }
+		.searchAddressTree { position: absolute; top: 60px; bottom: 0px; width: 100%; background: #f0f0f0; }
+	
+		.searchAddressTree input { border: 1px solid #ccc; width: 95%; margin: 5px auto; display: block; border-radius: 50px; height: 35px; line-height: 35px; text-indent: 15px; color: #666; }
+		.searchAddressTree .searchlist { position: absolute; top: 47px; bottom: 50px; background: #fff; overflow-y: scroll; 
+			overflow-x: hidden; width: 100%; }
+
+		.searchAddressTree .listItem { line-height: 25px; border-bottom: 1px solid #ccc; width: 95%; font-size:16px; padding: 10px 0; margin: 0 auto;   }
+		#searchAddressTreeFooter { position: absolute; height: 50px; bottom: 0px; }
+	</style>
+</head>
+<body>
+
+	<div id="header" class="com-bg">
+		<div class="left-button white-color" id="backButton" style="display: none">
+			<a href="public.html">
+				<img src="/publicorder_wap/libs/img/icon-left.png" alt="" style="width: 77%; margin: 9px 10px;">
+			</a>
+		</div>
+		<div class="title white-color fs-big">场所管理信息</div>
+	</div>
+
+	<div class="main public-details">
+		<div class="list white-bg gray-border" data-name="message">
+			<div class="item gray-border cl" id="setAddress">
+				<div class="key gray-color text-line-set">场所地址</div>
+				<div class="value com-color" id="setAddressName" style="max-width: 250px; line-height: 30px; padding: 10px 0;"></div>
+			</div>
+			<div class="item gray-border cl" id="setPolice">
+				<div class="key gray-color text-line-set">所属警员</div>
+				<div class="value com-color" id="setPoliceName"></div>
+			</div>
+			<div class="item gray-border cl" id="setAddressTree">
+				<div class="key gray-color text-line-set">行政区域</div>
+				<div class="value com-color" id="setAddressTreeName"></div>
+			</div>
+			<div class="item gray-border cl" id="setBusinesskind">
+				<div class="key gray-color text-line-set">场所类别</div>
+				<div class="value com-color" id="setBusinesskindName"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var isChecked = true;
+</script>
+<script src="/libs/js/jquery.min.js"></script>
+<script src="/libs/js/common.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1&plugin=AMap.Autocomplete"></script>	
+<script src="/publicorder_wap/libs/js/permissions.js"></script>
+<script src="/publicorder_wap/libs/js/public_manage.js"></script>
+</html>
